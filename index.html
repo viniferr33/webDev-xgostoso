@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Xis-Gostoso Bah!</title>
+  </head>
+  <body>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col alert alert-primary">
+          <h2>Xis-Gostoso Bah! O melhor Xis da nação!</h2>
+          <span id="datetime">Horario</span>
+        </div>
+        <!--DIV COL-->
+      </div>
+      <!--DIV ROW-->
+      <form id="input" class="needs-validation">
+        <div class="row">
+          <div class="col-6">
+            <label for="phone" class="form-label">Telefone</label>
+            <input type="tel" id="phone" class="form-control" required />
+          </div>
+          <!--COL6-->
+          <div class="col-6">
+            <label for="name" class="form-label">Nome</label>
+            <input type="text" id="nome" class="form-control" required />
+          </div>
+          <!--COL6-->
+        </div>
+        <!--DIV ROW-->
+        <br />
+        <div class="row">
+          <div class="col-6">
+            <label for="combo" class="form-label">Selecione o combo:</label>
+            <select id="combo" class="form-select" required>
+              <option selected></option>
+              <option value="xis1">Xis Minhão</option>
+              <option value="xis2">Xis Mato</option>
+              <option value="xis3">Xis Porco</option>
+            </select>
+          </div>
+          <!--COL6-->
+          <div class="col-3">
+            <p>Extras:</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="ex1" id="ex1" />
+              <label class="form-check-label" for="ex1"> Chimarrão </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="ex2" id="ex2"/>
+              <label class="form-check-label" for="ex2"> Bandeclay </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="ex3" id="ex3"/>
+              <label class="form-check-label" for="ex3"> Batata Frita </label>
+            </div>
+          </div>
+          <!--COL3-->
+          <div class="col-3">
+            <p>Entrega:</p>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="radio1"
+              />
+              <label class="form-check-label" for="radio1"> Delivery </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="radio2"
+                checked
+              />
+              <label class="form-check-label" for="radio2"> Retirar </label>
+            </div>
+          </div>
+          <!--COL3-->
+        </div>
+        <!--DIV ROW-->
+        <br />
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col text-center">
+              <button type="button" value="submit" class="btn btn-primary" id="enviar">
+                Enviar
+              </button>
+              <button type="button" value="calculate" class="btn btn-primary" id="calcular">
+                Calcular
+              </button>
+              <button type="reset" class="btn btn-primary" id="novo">Novo Pedido</button>
+            </div>
+          </div>
+          <!--DIV ROW-->
+        </div>
+        <!--CONTAINER-->
+      </form>
+      <br />
+      <form>
+        <div>
+          <label for="total" class="form-label">Total a pagar:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="total"
+            disabled
+            readonly
+          />
+        </div>
+        <br />
+        <div>
+          <label for="description" class="form-label">Descrição</label>
+          <textarea
+            class="form-control"
+            id="description"
+            rows="3"
+            disabled
+            readonly
+          ></textarea>
+        </div>
+      </form>
+    </div>
+    <!--DIV CONTAINER-->
+  </body>
+  <footer>
+    <script src="script.js"></script>
+  </footer>
+</html>
