@@ -2,6 +2,9 @@ const btnEnviar = document.getElementById('enviar');
 const btnCalcular = document.getElementById('calcular');
 const btnReset = document.getElementById('novo');
 
+const spanHorario = document.getElementById('datetime');
+spanHorario.innerHTML = new Date().toLocaleTimeString();
+
 let finalOrder = {
     'pedidos': [],
     'price': 0.0
